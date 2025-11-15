@@ -86,12 +86,12 @@ const TextInput = ({
             id="text-input"
             value={text}
             onChange={(e) => onTextChange(e.target.value)}
-            className="w-full h-64 px-4 py-3 bg-black/50 border-2 border-purple-500/30 text-gray-200 placeholder-gray-500 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 resize-none backdrop-blur-sm"
+            className="w-full h-64 px-4 py-3 bg-black/50 border-2 border-purple-500/30 text-gray-200 placeholder-gray-500 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 resize-none backdrop-blur-sm font-medium text-lg"
             placeholder="Type or speak your text here..."
           />
           {interimText && (
-            <div className="absolute left-4 bottom-4 text-purple-400/60 italic pointer-events-none">
-              {interimText}
+            <div className="absolute left-4 bottom-4 text-purple-300/80 italic pointer-events-none font-medium animate-transcriptTyping">
+              {interimText}...
             </div>
           )}
         </div>

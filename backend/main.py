@@ -83,3 +83,7 @@ async def process_text(data: TextIn):
         "sentiment_score": score,
         "keywords": keywords
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
